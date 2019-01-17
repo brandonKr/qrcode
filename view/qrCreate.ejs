@@ -1,0 +1,19 @@
+<%
+
+let imgsrc = 'data:image/jpeg;base64,' + qrimage.toString('base64')
+
+%>
+<html>
+  <head>
+  <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1>Create QrCode!</h1>
+    <ul>
+        <li>Qr Text : <%= inputStr %></li>
+        <li><img src="<%= imgsrc %>"/></li>
+        
+    </ul>
+  </body>
+</html>
